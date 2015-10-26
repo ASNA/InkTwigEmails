@@ -1,0 +1,7 @@
+{
+    "require": {
+        "codegyre/robo": "*",
+        "twig/twig": "~1.0",
+        "symfony/yaml": "~2.7.5"
+    }
+}
