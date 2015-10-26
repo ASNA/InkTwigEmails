@@ -16,7 +16,6 @@ class RoboFile extends \Robo\Tasks
 
     public function read()
     {
-
         $yaml = new Parser();
 
         $value = $yaml->parse(file_get_contents('eblast-defs/eblast2.def'));
@@ -31,7 +30,9 @@ class RoboFile extends \Robo\Tasks
         // fclose($file_handle);
     }
 
-    // Define public methods as commands.
+    /**
+     * Generate development version of email to output/development.html.
+     */
     public function generate($action = 'status')
     {
         $loader = new Twig_Loader_Filesystem('templates');
